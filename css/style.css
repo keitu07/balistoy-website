@@ -1,3 +1,10 @@
+/* GreenStitch Color Palette
+   Forest green: #2f5d3a (header, buttons)
+   Soft beige:   #f5efe3 (page background)
+   Sand:         #e8dcc6 (highlights background)
+   Dark brown:   #3e2c23 (text, footer)
+*/
+
 /* Colors and fonts from the Visual Style in the proposal */
 body {
     font-family: "Open Sans", sans-serif;
