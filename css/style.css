@@ -55,7 +55,7 @@ nav a:hover {
 /* Hero */
 .hero {
     background-color: #2f5d3a;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/main.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("web/images/main.jpg");
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
