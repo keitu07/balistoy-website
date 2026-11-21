@@ -48,6 +48,44 @@
             </div>
         </section>
 
+        <!-- GALLERY -->
+        <section id="gallery">
+            <div class="container">
+                <p class="eyebrow">Gallery</p>
+                <h2 class="section-title">GreenStitch in the wild</h2>
+                <p class="section-intro">Real people wearing our clothes outdoors &mdash; Everyday outfits for campus,
+                    weekend hangouts, and everywhere life takes you.</p>
+                <div class="gallery-grid" id="galleryGrid">
+                    <img class="tall" src="images/bluegirl.jpg" alt="girl wearing blue">
+                    <img src="images/girlolive.jpg" alt="Girl wearing olive jacket">
+                    <img src="images/messy.jpg" alt="messy boy">
+                    <img src="images/sean.jpg" alt="Sean from cortis">
+                    <img src="images/gray.jpg" alt="Boy wearing gray">
+
+                    <!-- Hidden until View More is clicked -->
+                    <img class="extra-gallery" src="images/black.jpg" alt="Classic recycled denim">
+                    <img class="extra-gallery" src="images/blueboy.jpg" alt="Indigo straight-leg jeans">
+                    <img class="extra-gallery" src="images/green.jpg" alt="boy wearing green">
+                    <img class="extra-gallery" src="images/boywhite.jpg" alt="Clay bomber jacket">
+                    <img class="extra-gallery" src="images/brownboy.jpg" alt="Sand graphic tee">
+                    <img class="extra-gallery" src="images/cool.jpg" alt="cool guy">
+                    <img class="extra-gallery" src="images/boyclay.jpg" alt="boy wearing gray">
+                    <img class="extra-gallery" src="images/orange.jpg" alt="boy wearing orange">
+                    <img class="extra-gallery" src="images/red.jpg" alt="boy wearing red">
+                    <img class="extra-gallery" src="images/style.jpg" alt="stylish boy">
+                    <img class="extra-gallery" src="images/white.jpg" alt="boy with white">
+                    <img class="extra-gallery" src="images/guy.jpg" alt="guy">
+                </div>
+            </div>
+            </div>
+            </div>
+
+            </div>
+            <div class="gallery-actions">
+                <button type="button" class="btn" id="viewMoreBtn">View More</button>
+            </div>
+            </div>
+        </section>
         <!-- Highlights Section -->
         <section class="highlights">
             <h2>Highlights</h2>
@@ -83,6 +121,15 @@
         <p>Email: supportgreenstitch@gmail.com | Phone: +63 7 5139 1720</p>
         <p>&copy; 2026 GreenStitch Eco-Clothing. Website by KYTE P. BALISTOY.</p>
     </footer>
+
+    <script>
+        const viewMoreBtn = document.getElementById("viewMoreBtn");
+        const galleryGrid = document.getElementById("galleryGrid");
+        viewMoreBtn.addEventListener("click", () => {
+            const isOpen = galleryGrid.classList.toggle("show-all");
+            viewMoreBtn.textContent = isOpen ? "View Less" : "View More";
+        });
+    </script>
 
 </body>
 
